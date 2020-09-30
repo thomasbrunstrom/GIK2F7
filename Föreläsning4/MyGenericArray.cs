@@ -17,12 +17,18 @@ namespace Föreläsning4
         }
         public void SetItem(int index, T Value) 
         {
-            MyArray[index] = Value;
+            if(index < Count && index > -1) {
+                MyArray[index] = Value;
+            }
+        }
+        public int GetBiggest(T a, T b)
+        {
+            return a.CompareTo(b);
         }
         public override string ToString()
         {
             string retString = "";
-            for(int i = 0;i<MyArray.Length - 1;i++) 
+            for(int i = 0;i < MyArray.Length - 1;i++) 
             {
                 if(GetItem(i) != null) {
                     retString += " " + GetItem(i).ToString();

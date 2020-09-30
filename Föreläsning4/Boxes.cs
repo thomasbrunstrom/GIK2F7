@@ -21,6 +21,8 @@ namespace Föreläsning4
         public T depth;
         public string GetInfo()
         {
+            
+            //return width + height + depth;
             return string.Format("{0}, {1}, {2}", width, height, depth);
         }
     }
