@@ -1,0 +1,32 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button Content="Load list" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Height="34" Width="75" Click="Button_Click"/>
+        <ListBox x:Name="ListBox1" Margin="10,10,558,10" SelectionChanged="ListBox_SelectionChanged" DisplayMemberPath="Fornamn">
+        </ListBox>
+        <Label x:Name="LblFornamn" Content="Förnamn" RenderTransformOrigin="0.5,1" VerticalAlignment="Top" HorizontalAlignment="Left" Width="158" Margin="262,9,0,0" Height="25" ScrollViewer.VerticalScrollBarVisibility="Hidden" FontWeight="Bold"/>
+        <Label x:Name="LblFornamn_Content" Content="Förnamn" RenderTransformOrigin="0.5,1" VerticalAlignment="Top" HorizontalAlignment="Left" Width="158" Margin="262,39,0,0" Height="25" ScrollViewer.VerticalScrollBarVisibility="Hidden"/>
+        <Label x:Name="LblEfterNamn" Content="Efternamn" RenderTransformOrigin="0.5,1" VerticalAlignment="Top" HorizontalAlignment="Left" Width="158" Margin="262,69,0,0" Height="25" ScrollViewer.VerticalScrollBarVisibility="Hidden" FontWeight="Bold"/>
+        <Label x:Name="LblEfterNamn_Content" Content="Förnamn" RenderTransformOrigin="0.5,1" VerticalAlignment="Top" HorizontalAlignment="Left" Width="158" Margin="262,99,0,0" Height="25" ScrollViewer.VerticalScrollBarVisibility="Hidden"/>
+        <Label x:Name="LblEmail" Content="Epost" RenderTransformOrigin="0.5,1" VerticalAlignment="Top" HorizontalAlignment="Left" Width="158" Margin="262,129,0,0" Height="25" ScrollViewer.VerticalScrollBarVisibility="Hidden" FontWeight="Bold"/>
+        <Label x:Name="LblEpost_Content" Content="Epost" RenderTransformOrigin="0.5,1" VerticalAlignment="Top" HorizontalAlignment="Left" Width="158" Margin="262,159,0,0" Height="25" ScrollViewer.VerticalScrollBarVisibility="Hidden"/>
+        <GroupBox Header="Lägg till användare" Margin="526,10,10,200">
+            <StackPanel Height="205">
+                <Label x:Name="LblFornamn_Copy" Content="Förnamn" RenderTransformOrigin="0.5,1" VerticalAlignment="Top" HorizontalAlignment="Left" Width="214" Height="26" ScrollViewer.VerticalScrollBarVisibility="Hidden" FontWeight="Bold"/>
+                <TextBox HorizontalAlignment="Left" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="193" Height="27" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
+                <Label x:Name="LblEfterNamn_Copy" Content="Efternamn" RenderTransformOrigin="0.5,1" VerticalAlignment="Top" HorizontalAlignment="Left" Width="214" Height="26" ScrollViewer.VerticalScrollBarVisibility="Hidden" FontWeight="Bold"/>
+                <TextBox HorizontalAlignment="Left" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="193" Height="27" VerticalContentAlignment="Center"/>
+                <Label x:Name="LblEmail_Copy" Content="Epost" RenderTransformOrigin="0.5,1" VerticalAlignment="Top" HorizontalAlignment="Left" Width="214" Height="27" ScrollViewer.VerticalScrollBarVisibility="Hidden" FontWeight="Bold"/>
+                <TextBox HorizontalAlignment="Left" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="193" Height="27" VerticalContentAlignment="Center"/>
+                <Button Content="Add person" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="91" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Height="30" Margin="0,10,0,0"/>
+            </StackPanel>
+        </GroupBox>
+        
+    </Grid>
+</Window>

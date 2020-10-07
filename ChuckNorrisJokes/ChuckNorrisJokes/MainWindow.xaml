@@ -1,0 +1,16 @@
+﻿<Window x:Class="ChuckNorrisJokes.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChuckNorrisJokes"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="Btn_FetchJoke" Content="Fetch joke" HorizontalAlignment="Right" Margin="665,355,5,5" VerticalAlignment="Bottom" Click="Btn_FetchJoke_Click" Padding="10,5,10,5"/>
+        <TextBlock x:Name="TxtBlk_JokeHolder" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="374" Width="275"><Run Language="sv-se"/></TextBlock>
+        <Button x:Name="Btn_CatFact" Content="Get Cat" HorizontalAlignment="Right" Margin="0,0,85,5" VerticalAlignment="Bottom" Click="Btn_GetRandomCat_Click" Padding="10,5,10,5" />
+        <Image x:Name="Img" HorizontalAlignment="Left" Height="285" Margin="390,49,0,0" VerticalAlignment="Top" Width="360" Stretch="Uniform" />
+
+    </Grid>
+</Window>
