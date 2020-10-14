@@ -11,6 +11,10 @@
         <TextBlock x:Name="TxtBlk_JokeHolder" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="374" Width="275"><Run Language="sv-se"/></TextBlock>
         <Button x:Name="Btn_CatFact" Content="Get Cat" HorizontalAlignment="Right" Margin="0,0,85,5" VerticalAlignment="Bottom" Click="Btn_GetRandomCat_Click" Padding="10,5,10,5" />
         <Image x:Name="Img" HorizontalAlignment="Left" Height="285" Margin="390,49,0,0" VerticalAlignment="Top" Width="360" Stretch="Uniform" />
-
+        <Button x:Name="sendJson" Content="Send Json" HorizontalAlignment="Left" Margin="425,400,0,0" VerticalAlignment="Top" Click="sendJson_Click"/>
+        <TextBox x:Name="firstname" HorizontalAlignment="Left" Margin="310,334,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="lastname" HorizontalAlignment="Left" Margin="310,366,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button Name="btnOpenFile" Margin="30,401,640,14" Click="btnOpenFile_Click">Open file</Button>
+        <TextBox x:Name="filename" HorizontalAlignment="Left" Margin="30,378,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
     </Grid>
 </Window>
